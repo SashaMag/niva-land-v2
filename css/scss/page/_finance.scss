@@ -1,0 +1,87 @@
+.finance-page {
+  padding-top: 0;
+  background-image: url('../img/bg/finance.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 0px 4px 0px #888;
+}
+
+.background-finance {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARklEQVQYV4XQSQoAMAgDQD36/z/6BD1aLLR0ccl5SCBoZgxNVBWwg46IqIYL+WDaeKIUviiEEfpghi5YoQ07NKGIsP/UZQBfkUHOI3fxiwAAAABJRU5ErkJggg==) repeat;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.finance-block {
+  padding: 10px;
+  font-size: 23px;
+
+  h4 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  p {
+    padding-left: 26px;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 23px;
+
+    li {
+      position: relative;
+      padding-left: 17px;
+      text-indent: -.7em;
+      margin-bottom: 23px;
+
+      &:before {
+        content: "\002022";
+        font-size: 42px;
+        color: $main-brand-color;
+        position: absolute;
+        top: -14px;
+        left: -8px;
+      }
+    }
+  }
+
+  .btn-finance {
+    display: block;
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .finance-form {
+    background-color: rgba(0,0,0,0);
+    width: 300px;
+    padding: 0;
+
+    .input-block {
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: #333333;
+    }
+
+    input {
+      padding: 6px;
+      padding-left: 50px;
+      border: 1px solid $light-grey;
+      margin-bottom: 0%;
+    }
+
+    button {
+      width: 100%;
+      margin-bottom: 25px;
+      margin-top: 15px;
+      font-size: 18px;
+      padding: 6px;
+    }
+  }
+}
+

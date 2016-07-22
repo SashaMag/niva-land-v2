@@ -1,0 +1,60 @@
+.service-page {
+  background: url('../img/service.png');
+  padding-top: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 0px 4px 0px #888;
+}
+
+.background-service {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARklEQVQYV4XQSQoAMAgDQD36/z/6BD1aLLR0ccl5SCBoZgxNVBWwg46IqIYL+WDaeKIUviiEEfpghi5YoQ07NKGIsP/UZQBfkUHOI3fxiwAAAABJRU5ErkJggg==) repeat;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.service-block__img-block {
+  padding: 0;
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+    @include box-shadow(0 0 10px -2px #333);
+
+    &:hover {
+      @include box-shadow(0 0 20px -2px #333);
+    }
+  }
+}
+
+.service-block__text-block {
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 48px;
+    padding-left: 22px;
+
+    li {
+      color: #333333;
+      margin-bottom: 22px;
+      font-size: 22px;
+      position: relative;
+      padding-left: 30px;
+      cursor: default;
+
+      &:hover {
+        i {
+          font-size: 25px;
+        }
+      }
+
+      i {
+        position: absolute;
+        margin-right: 5px;
+        left: 0;
+        color: $main-brand-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.form {
+  background-color: rgba(0,0,0,0.7);
+  width: 325px;
+  padding: 40px;
+  padding-top: 30px;
+  border-radius: 3px;
+
+  .input-block {
+
+    &:hover {
+
+      .input-icon {
+
+        i {
+          color: darken($light-grey, 10%);
+        }
+      }
+    }
+
+    .input-icon {
+      position: relative;
+
+      i {
+        color: $light-grey;
+        position: absolute;
+        font-size: 30px;
+        top: 12px;
+        left: 14px;
+
+        @include transition(all, .2s);
+      }
+    }
+
+    label {
+      color: #fff;
+      display: block;
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    input {
+      margin-bottom: 40px;
+      width: 100%;
+      padding: 10px;
+      padding-left: 50px;
+      font-size: 26px;
+      border-radius: 3px;
+      border: none;
+
+      &:focus ~ i {
+        color: darken($light-grey, 20%);
+      }
+    }
+  }
+
+  button {
+    background-color: $main-brand-color;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 30px;
+    width: 100%;
+
+    &:hover {
+      color: #fff;
+      background-color: lighten($main-brand-color, 10%);
+    }
+  }
+}
+
+.form-modal {
+  width: 465px;
+  background-color: #ffffff;
+
+  .modal-form-headline {
+    font-size: 20px;
+    margin-bottom: 47px;
+    position: relative;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &:after,
+    &:before {
+      @include after(absolute, block);
+      width: 50px;
+      height: 2px;
+      background-color: $main-brand-color;
+      bottom: -10px;
+    }
+
+    &:after {
+      left: 50%;
+    }
+
+    &:before {
+      right: 50%;
+    }
+  }
+
+  .modal-form-explain {
+    margin-bottom: 30px;
+  }
+
+  .input-block {
+
+    label {
+      text-align: left;
+      color: $dark-grey;
+    }
+
+    input {
+      border: 1px solid $light-grey;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

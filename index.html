@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/lib/jquery.bxslider.min.js"></script>
+  <script src="js/lib/remodal.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/application.css">
+  <style>
+    .remodal-overlay.without-animation.remodal-is-opening,
+    .remodal-overlay.without-animation.remodal-is-closing,
+    .remodal.without-animation.remodal-is-opening,
+    .remodal.without-animation.remodal-is-closing,
+    .remodal-bg.without-animation.remodal-is-opening,
+    .remodal-bg.without-animation.remodal-is-closing {
+      animation: none;
+    }
+  </style>
+  <title>Title</title>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="container">
+
+      <div class="main-logo-block">
+        <img src="img/logos/che.png" alt="Chevrolet Niva" width="175px">
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#slider-page">Chevrolet Niva</a></li>
+          <li><a href="#client-service-page">Специальные<br>предложения</a></li>
+          <li><a href="#price-page">Цены</a></li>
+          <li><a href="#credit">Кредит</a></li>
+          <li><a href="#finance-page">Обмен/<br>утилизация</a></li>
+          <li><a href="#service-page">Сервис</a></li>
+          <li><a href="#contacts-page">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-phones-block">
+        <div class="phones">
+          <a href="tel:84952307755">8(495) 230-77-55</a>
+          <a href="tel:88007756959">8(800) 775-69-59</a>
+        </div>
+
+        <div class="description">Бесплатно&nbsp;&nbsp; по&nbsp;&nbsp; России<br>и с сотовых телефонов</div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page slider-page" id="slider-page">
+    <!--<ul id="bxslider">-->
+      <div class="slide slide-1">
+        <div class="bg">
+          <div class="container">
+
+            <div class="slide-1-text">
+              <h1>Chevrolet Niva</h1>
+              <span class="sale">с выгодой</span>
+              <span class="price">150 000</span>
+              <span class="rub">рублей</span>
+            </div>
+
+            <form action="" class="form main-form">
+
+              <div class="input-block">
+                <label for="main-form-1-name">Ваше имя</label>
+
+                <div class="input-icon">
+                  <input type="text" id="main-form-1-name" placeholder="Имя">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="input-block">
+                <label for="main-form-1-phone">Ваш телефон</label>
+
+                <div class="input-icon">
+                  <input type="text" id="main-form-1-phone" placeholder="Телефон">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <button type="submit" class="btn submit-btn">Получить скидку</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    <!--</ul>-->
+  </section>
+
+  <section class="page client-service-page" id="client-service-page">
+    <div class="container">
+
+      <h2 class="page-headline">Специальные предложения</h2>
+
+      <div class="row">
+        <article class="col-md-6">
+          <div class="client-service-offer-block">
+            <i class="fa fa-percent" aria-hidden="true"></i>
+            <h4>Гарантированная выгода</h4>
+            <p class="description">Гарантируем выгоду 75 000 р. всем покупателям. Заполните форму или позвоните для получения максимальной выгоды.</p>
+            <button class="btn orange"
+                    data-remodal-target="modal-form"
+                    data-headline="Гарантируем выгоду 75 000 р всем покупателям. Заполните форму или позвоните для максимальной выгоды.">Подробнее</button>
+          </div>
+        </article>
+
+        <article class=" col-md-6 ">
+          <div class="client-service-offer-block">
+            <i class="fa fa-car" aria-hidden="true"></i>
+            <h4>Мы это делаем</h4>
+            <p class="description">Мы уже подготовили автомобили и даем гарантию — дифференциал самоблокирующийся, шины, автосигнализация с автозапуском, автомагнитола и многое другое. Выберите своей подготовленный авто и станьте участником акции</p>
+            <button class="btn orange"
+                    data-remodal-target="modal-form"
+                    data-headline="Мы уже подготовили автомобили и даем гарантию — дифференциал самоблокирующийся, шины, автосигнализация с автозапуском, автомагнитола и многое другое. Выберите своей подготовленный авто и станьте участником акции">Подробнее</button>
+          </div>
+        </article>
+
+        <article class=" col-md-6">
+          <div class="client-service-offer-block">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <h4>Сервис с выгодой</h4>
+            <p class="description">Теперь сервис стал доступнее. Купив автомобиль в нашем дилерском центре, вы автоматически становитесь участником накопительной программы скидок на гарантийное и послегарантийное обслуживание</p>
+            <button class="btn orange" data-remodal-target="modal-form" data-headline="Теперь сервис стал доступнее. Купив автомобиль в нашем дилерском центре, вы автоматически становитесь участником накопительной программы скидок на гарантийное и послегарантийное обслуживание">Подробнее</button>
+          </div>
+        </article>
+
+        <article class=" col-md-6">
+          <div class="client-service-offer-block">
+            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+            <h4>Кредит с гос. поддержкой</h4>
+            <ul class="description">
+              <li>Всего два документа (паспорт и права)</li>
+              <li>20% первый взнос</li>
+              <li>Ваш авто как первый взнос</li>
+            </ul>
+            <button class="btn orange" data-remodal-target="modal-form" data-headline="Всего два документа (паспорт и права)
+            20% первый взнос
+            Ваш авто как первый взнос">Подробнее</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page price-page" id="price-page">
+    <div class="container">
+
+      <h2 class="page-headline">Комплектация и цены</h2>
+
+      <div class="row">
+
+        <article class="col-md-4 col-sm-6">
+          <div class="car-item-block">
+            <div class="img-block">
+              <span>Акция</span>
+              <div class="img"></div>
+            </div>
+            <div class="text-block">
+              <h4>L</h4>
+              <span class="price">от 495 000 р.</span></div>
+            <div class="button-block">
+              <a href="http://cars.chevrolet-torgmash.ru/" class="btn-price-in-stock btn">В наличии</a>
+              <a class="btn-price-know-more btn"
+                 data-remodal-target="modal-car"
+                 data-car="L"
+                 data-price="от 495 000 р."
+                 data-innovations="Электронный блок управления двигателем - BOSCH
+Норма токсичности ЕВРО-5, без снижения разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Изотермические стекла"
+                 data-overall="Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)"
+                 data-exterior="Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, неокрашенные"
+                 data-construct="Центральный замок
+Аудиоподготовка: жгуты проводов
+Колеса стальные 15''
+Стальной кронштейн запасного колеса
+Колпак запасного колеса">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-4 col-sm-6">
+          <div class="car-item-block">
+            <div class="img-block">
+              <span>Акция</span>
+              <div class="img"></div>
+            </div>
+            <div class="text-block">
+              <h4>LC</h4>
+              <span class="price">от 538 000 р.</span></div>
+            <div class="button-block">
+              <a href="http://cars.chevrolet-torgmash.ru/" class="btn-price-in-stock btn">В наличии</a>
+              <a class="btn-price-know-more btn"
+                 data-remodal-target="modal-car"
+                 data-car="LC"
+                 data-price="от 538 000 р."
+                 data-innovations="Компрессор кондиционера Delphi с переменным объемом значительно увеличивает производительность
+             кондиционера по сравнению с компрессорами постоянного объема
+Электронный блок управления двигателем - BOSCН
+Норма токсичности ЕВРО-5, без снижения разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Изотермические стекла"
+                 data-overall="Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)"
+                 data-exterior="Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, неокрашенные"
+                 data-construct="Кондиционер
+Центральный замок
+Аудиоподготовка: жгуты проводов
+Колеса стальные 15''
+Стальной кронштейн запасного колеса
+Колпак запасного колеса">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-4 col-sm-6">
+          <div class="car-item-block">
+            <div class="img-block">
+              <span>Акция</span>
+              <div class="img"></div>
+            </div>
+            <div class="text-block">
+              <h4>GL</h4>
+              <span class="price">от 580 000 р.</span></div>
+            <div class="button-block">
+              <a href="http://cars.chevrolet-torgmash.ru/" class="btn-price-in-stock btn">В наличии</a>
+              <a class="btn-price-know-more btn"
+                 data-remodal-target="modal-car"
+                 data-car="GL"
+                 data-price="от 580 000 р."
+                 data-innovations="Компрессор кондиционера Delphi с переменным объемом значительно увеличивает производительность
+            кондиционера по сравнению с компрессорами постоянного объема
+Электронный блок управления двигателем - BOSCН
+Hорма токсичности ЕВРО-5, без снижения разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)"
+                 data-overall="Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF (Германия)
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)
+Бампер передний, задний, молдинги и накладки арок, окрашенные в цвет кузова
+Ручки дверей, окрашенные в цвет кузова"
+                 data-exterior="Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, окрашенные в цвет кузова"
+                 data-construct="Кондиционер
+Сигнализация, интегрированная с блоком иммобилайзера
+Передние противотуманные фары
+Аудиоподготовка: жгуты проводов
+Колеса легкосплавные 15''
+Алюминиевый кронштейн запасного колеса
+Подушки безопасности водителя и переднего пассажира
+Преднатяжители ремней безопасности водителя и переднего пассажира
+Подголовники задних сидений L-образной формы
+Антиблокировочная система (АБС)
+Система ISOFIX для установки детских удерживающих устройств на заднем сиденье автомобиля">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-4 col-sm-6">
+          <div class="car-item-block">
+            <div class="img-block">
+              <span>Акция</span>
+              <div class="img"></div>
+            </div>
+            <div class="text-block">
+              <h4>GLC</h4>
+              <span class="price">от 598 000 р.</span></div>
+            <div class="button-block">
+              <a href="http://cars.chevrolet-torgmash.ru/" class="btn-price-in-stock btn">В наличии</a>
+              <a class="btn-price-know-more btn"
+                 data-remodal-target="modal-car"
+                 data-car="GLC"
+                 data-price="от 598 000 р."
+                 data-innovations="Электронный блок управления двигателем - BOSCH Hорма токсичности ЕВРО-5, без снижения
+  разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Обогреваемое лобовое стеклоМагнитола и два передних динамика
+Водительское сидение с поясничным подпором"
+                 data-overall="Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)"
+                 data-exterior="Бампер передний, задний, молдинги и накладки арок, окрашенные в цвет кузова
+Хромированная вставка на решетке радиатора
+Ручки дверей, окрашенные в цвет кузова
+Улучшенная отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, окрашенные в цвет кузова
+Декоративная накладка на передней панели со стороны пассажира
+Вставки под «алюминий» на рукоятках коробки передач и раздаточной коробки"
+                 data-construct="Кондиционер
+Сигнализация, интегрированная с блоком иммобилайзера
+Рейлинги крыши (нагрузка до 75 кг)
+Передние противотуманные фары
+Внешняя антенна
+Аудиоподготовка: жгуты проводов
+Магнитола, два передних динамика, антенна
+Обогреваемое ветровое стекло
+Колеса легкосплавные 16'' с логотипом Chevrolet
+Алюминиевый кронштейн запасного колеса
+Задний плафон освещения салона
+Передние сиденья с подогревом
+Водительское сиденье с поясничной поддержкой
+Подушки безопасности водителя и переднего пассажира
+Преднатяжители ремней безопасности водителя и переднего пассажира
+Подголовники задних сидений L-образной формы
+Антиблокировочная система (АБС)
+Система ISOFIX для установки детских удерживающих устройств на заднем сиденье автомобиля">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-4 col-sm-6">
+          <div class="car-item-block">
+            <div class="img-block">
+              <span>Акция</span>
+              <div class="img"></div>
+            </div>
+            <div class="text-block">
+              <h4>LE</h4>
+              <span class="price">от 580 000 р.</span></div>
+            <div class="button-block">
+              <a href="http://cars.chevrolet-torgmash.ru/" class="btn-price-in-stock btn">В наличии</a>
+              <a class="btn-price-know-more btn"
+                 data-remodal-target="modal-car"
+                 data-car="LE"
+                 data-price="от 580 000 р."
+                 data-innovations="Электронный блок управления двигателем - BOSCН Hорма токсичности ЕВРО-5, без снижения
+  разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Изотермические стекла
+Подголовники заднего ряда сидений"
+                 data-overall="Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салонаКорректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)"
+                 data-exterior="Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, неокрашенные"
+                 data-construct="СПЕЦИАЛЬНЫЙ СОСТАВ ОПЦИЙ КОМПЛЕКТАЦИИ «LE»
+
+Колеса легкосплавные 16 дюймов черного цвета с шинами специального назначения All-Terrain
+              Шноркель для преодоления водных преград
+              ТСУ с защитой заднего бампера
+              Передняя защита двигателя и КПП
+              Передний кронштейн крепления лебедки  
+                 
+              КОНСТРУКТИВНЫЕ ОТЛИЧИЯ
+
+              Кондиционер
+              Сигнализация, интегрированная с блоком иммобилайзера
+              Рейлинги крыши (нагрузка до 75 кг)
+              Заглушка антенны
+              Аудиоподготовка: жгуты проводов
+              Колеса легкосплавные 16 дюймов черного цвета с шинами специального назначения All-Terrain
+              Алюминиевый кронштейн запасного колеса
+              Подголовники задних сидений L-образной формы
+              Система ISOFIX для установки детских удерживающих устройств на заднем сиденье автомобиля">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-4 col-sm-6">
+          <div class="car-item-block">
+            <div class="img-block">
+              <span>Акция</span>
+              <div class="img"></div>
+            </div>
+            <div class="text-block">
+              <h4>LE+</h4>
+              <span class="price">от 627 000 р.</span></div>
+            <div class="button-block">
+              <a href="http://cars.chevrolet-torgmash.ru/" class="btn-price-in-stock btn">В наличии</a>
+              <a class="btn-price-know-more btn"
+                 data-remodal-target="modal-car"
+                 data-car="LE+"
+                 data-price="от 627 000 р."
+                 data-innovations="Электронный блок управления двигателем - BOSCH
+  Норма токсичности ЕВРО-5, без снижения разгонно-мощностных характеристик двигателя
+  Электронная педаль вместо тросового привода - улучшение плавности хода
+  Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+  Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+  Изотермические стекла"
+                 data-overall="Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо
+Полноразмерное запасное колесо (аналогичные штатным колесам)
+Ручки дверей, окрашенные в цвет кузова"
+                 data-exterior="Улучшенная отделка салона
+  Наружные зеркала заднего вида с электроприводом и подогревом, окрашенные в цвет кузова
+  Декоративная накладка на передней панели со стороны пассажира
+  Вставки под «алюминий» на рукоятках коробки передач и раздаточной коробки
+  Интерьер, оформленный в черном цвете"
+                 data-construct="СПЕЦИАЛЬНЫЙ СОСТАВ ОПЦИЙ КОМПЛЕКТАЦИИ «LE+»
+
+Колеса легкосплавные 16 дюймов цвета «графит» с шинами специального назначения All-Terrain
+              Шноркель для преодоления водных преград
+              ТСУ с защитой заднего бампера
+              Передняя защита двигателя и КПП  
+               
+              КОНСТРУКТИВНЫЕ ОТЛИЧИЯ
+
+              Кондиционер
+              Сигнализация, интегрированная с блоком иммобилайзера
+              Рейлинги крыши (нагрузка до 75 кг)
+              Передние противотуманные фары
+              Внешняя антенна
+              Аудиоподготовка: жгуты проводов
+              Магнитола, два передних динамика, антенна
+              Обогреваемое ветровое стекло
+              Колеса легкосплавные 16 дюймов цвета «графит» с шинами специального назначения All-Terrain
+              Алюминиевый кронштейн запасного колеса
+              Задний плафон освещения салона
+              Передние сиденья с подогревом
+              Водительское сиденье с поясничной поддержкой
+              Подушки безопасности водителя и переднего пассажира
+              Преднатяжители ремней безопасности водителя и переднего пассажира
+              Подголовники задних сидений L-образной формы
+              Антиблокировочная система (АБС)
+              Система ISOFIX для установки детских удерживающих устройств на заднем сиденье автомобиля
+              Шноркель для преодоления водных преград
+              ТСУ с защитой заднего бампера
+              Передняя защита двигателя и КПП">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page finance-page" id="credit">
+    <div class="background-finance">
+      <div class="container">
+
+        <h2 class="page-headline">Кредит</h2>
+
+        <div class="row">
+          <div class="col-md-5-5">
+            <article class="finance-block">
+              <h4>Автокредит с гос. поддержкой</h4>
+
+              <p>Условия гос. программы очень просты:</p>
+
+              <ul>
+                <li>Всего два документа — паспорт и права</li>
+                <li>20% первый взнос</li>
+                <li>Ваш авто, как первый взнос</li>
+                <li>36 месяцев срок кредита</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-md-5-5 col-md-offset-1">
+            <article class="finance-block">
+
+              <form action="" class="form finance-form">
+
+                <div class="input-block">
+                  <label for="main-form-1-name">Ваше имя</label>
+
+                  <div class="input-icon">
+                    <input type="text" id="main-form-1-name" placeholder="Имя">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="input-block">
+                  <label for="main-form-1-phone">Ваш телефон</label>
+
+                  <div class="input-icon">
+                    <input type="text" id="main-form-1-phone" placeholder="Телефон">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn submit-btn red">Заявка на кредит</button>
+              </form>
+
+              <!--<h4>Программа<br>гос. утилизации и обмена</h4>-->
+
+              <!--<ul>-->
+                <!--<li>Государственная программа утилизации и обмена (Trade-id)</li>-->
+                <!--<li>75 000 рублей скидка</li>-->
+              <!--</ul>-->
+
+              <a onclick="$('#car-fin_calculation').click();" class="btn-finance btn">Рассчитать кредит онлайн</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page banks-page">
+    <div class="container">
+      <h2 class="page-headline">Банки-партнеры</h2>
+
+      <div class="row">
+        <div class="col-md-3"><a href=""><span class="bank-image-block bank-image-block-1"></span></a></div>
+        <div class="col-md-3"><a href=""><span class="bank-image-block bank-image-block-2"></span></a></div>
+        <div class="col-md-3"><a href=""><span class="bank-image-block bank-image-block-3"></span></a></div>
+        <div class="col-md-3"><a href=""><span class="bank-image-block bank-image-block-4"></span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page service-page" id="service-page">
+    <div class="background-service">
+      <div class="container">
+
+        <h2 class="page-headline">Сервис</h2>
+
+        <div class="row">
+          <article class="service-block__img-block col-md-5-75">
+            <img src="img/service.png" alt="Сервис">
+          </article>
+
+          <article class="service-block__text-block col-md-5-75 col-md-offset-05">
+            <ul>
+              <li><i class="fa fa-check" aria-hidden="true"></i>
+                Обслуживание автомобилей</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>
+                Слесарные работы</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>
+                Кузовной ремонт</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>
+                Экспертиза и оценка ремонта при ДТП</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>
+                Дополнительное оборудование</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i>
+                Электродиагностика и ремонт</li>
+            </ul>
+
+            <a class="btn btn-service" data-remodal-target="modal-form">Подробнее</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page contacts-page" id="contacts-page">
+    <div class="container">
+
+      <h2 class="page-headline">Контакты</h2>
+
+      <div class="contacts-description">
+        <span class="first-row">К нам очень легко добраться</span>
+        <span class="second-row">Москва, МКАД 88й км. внешняя сторона</span>
+        <span class="third-row">
+          <a href="tel:84952307755">8(495) 230-77-55</a>,
+          <a href="tel:88007756959">8(800) 775-69-59</a>
+        <span class="description"> (бесплатно по Россиии с сотовых телефонов)</span>
+        </span>
+      </div>
+
+      <div class="map-block">
+
+        <form action="" class="form contacts-form">
+
+          <div class="input-block">
+            <label for="main-form-1-name">Ваше имя</label>
+
+            <div class="input-icon">
+              <input type="text" id="main-form-1-name" placeholder="Имя">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="input-block">
+            <label for="main-form-1-phone">Ваш телефон</label>
+
+            <div class="input-icon">
+              <input type="text" id="main-form-1-phone" placeholder="Телефон">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <button type="submit" class="btn submit-btn">Заказать звонок</button>
+        </form>
+
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=b3xQk-DAV0Bc4BZ6HeXf2yiO6KoK7ONR&width=100%&height=700&lang=ru_RU&sourceType=constructor"></script>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer></footer>
+
+<!--<script>-->
+  <!--$(document).ready(function(){-->
+    <!--$('#bxslider').bxSlider();-->
+  <!--});-->
+<!--</script>-->
+
+<div class="remodal"
+     id="modal-form"
+     data-remodal-id="modal-form"
+     data-remodal-options="hashTracking: false">
+  <form action="" class="form form-modal">
+    <a data-remodal-action="close" class="remodal-close"></a>
+
+    <div class="modal-form-headline">Отправьте заявку, и наши менеджеры свяжутся с вами в течение двух минут</div>
+    <div class="modal-form-explain">Отправьте заявку, и наши менеджеры свяжутся с вами в течение двух минут</div>
+
+
+    <div class="input-block">
+      <label for="main-form-1-name">Ваше имя</label>
+
+      <div class="input-icon">
+        <input type="text" id="main-form-1-name" placeholder="Имя">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="input-block">
+      <label for="main-form-1-phone">Ваш телефон</label>
+
+      <div class="input-icon">
+        <input type="text" id="main-form-1-phone" placeholder="Телефон">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <button type="submit" class="btn submit-btn">Отправить</button>
+  </form>
+</div>
+
+
+<div class="remodal car-info-block"
+     data-remodal-id="modal-car"
+     id="car-info-block"
+     data-remodal-options="hashTracking: false">
+  <a data-remodal-action="close" class="remodal-close"></a>
+
+  <div class="col-md-4">
+    <div class="car-control">
+      <div class="img">
+        <img src="img/niva.png" alt="Шевроле Нива">
+      </div>
+      <h3></h3>
+      <div class="price"></div>
+      <div class="button-block">
+        <button class="btn orange active" data-page-num="1">Инновации 2016</button>
+        <button class="btn orange" data-page-num="2">Общее оборудование</button>
+        <button class="btn orange" data-page-num="3">Экстерьер</button>
+        <button class="btn orange" data-page-num="4">Конструктивные отличия</button>
+        <a class="btn red">В наличии</a>
+        <a class="btn red" data-remodal-target="modal-form">Узнать больше</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div class="car-info">
+      <div class="car-page active" data-page="1"><h4>Инновации 2016</h4>
+        <p data-headline="innovations"></p>
+      </div>
+      <div class="car-page" data-page="2"><h4>Общее оборудование</h4>
+        <p data-headline="overall"></p>
+      </div>
+      <div class="car-page" data-page="3"><h4>Экстерьер</h4>
+        <p data-headline="exterior"></p>
+      </div>
+      <div class="car-page" data-page="4"><h4>Конструктивные отличия</h4>
+        <p data-headline="construct"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    var carfinParam = {
+      'partner': 1800,
+      'htmlPrice': 'carfinPrice',
+      'positionAlign': 'left',
+      'positionTop': 50,
+      'tpl': 14
+    };
+    var carfinScript = document.createElement('script');
+    carfinScript.type = 'text/javascript';
+    carfinScript.async = true;
+    carfinScript.charset = 'utf-8';
+    carfinScript.src = (("https:" == document.location.protocol) ? "https://" : "http://") + 'car-fin.com/widget/price.js';
+    var carfinScriptDone = false;
+    carfinScript.onload = carfinScript.onreadystatechange = function() {
+      if (!carfinScriptDone
+          && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")
+          && typeof(carfinCalculator) == 'object') {
+        carfinScriptDone = true;
+        carfinCalculator.run(carfinParam);
+      }
+    }
+    var firstScript = document.getElementsByTagName('script')[0];
+    firstScript.parentNode.insertBefore(carfinScript, firstScript);
+  })();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

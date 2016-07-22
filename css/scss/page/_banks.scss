@@ -1,0 +1,48 @@
+.banks-page {
+  padding-bottom: 30px;
+}
+
+.bank-image-block {
+  width: 100%;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 45px;
+  
+  &-1 {
+    background-image: url('../img/logos/mtkb-n.jpg');
+    height: 66px;
+
+    &:hover {
+      background-image: url('../img/logos/mtkb.jpg');
+    }
+  }
+
+  &-2 {
+    background-image: url('../img/logos/rfb-n.jpg');
+    height: 67px;
+
+    &:hover {
+      background-image: url('../img/logos/rfb.jpg');
+    }
+  }
+
+  &-3 {
+    background-image: url('../img/logos/stlm-n.jpg');
+    height: 77px;
+
+    &:hover {
+      background-image: url('../img/logos/stlm.jpg');
+    }
+  }
+
+  &-4 {
+    background-image: url('../img/logos/vtb-n.jpg');
+    height: 65px;
+
+    &:hover {
+      background-image: url('../img/logos/vtb.jpg');
+    }
+  }
+}

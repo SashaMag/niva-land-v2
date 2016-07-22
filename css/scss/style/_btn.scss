@@ -1,0 +1,72 @@
+.btn {
+  @include border-radius;
+  font-size: 18px;
+}
+
+.btn.orange {
+  background-color: $main-brand-color;
+  color: #ffffff;
+
+  &:hover {
+    background-color: lighten($main-brand-color, 10%);
+    color: #ffffff;
+  }
+}
+
+.btn.red {
+  background-color: $red;
+  color: #ffffff;
+
+  &:hover {
+    background-color: lighten($red, 10%);
+    color: #ffffff;
+  }
+}
+
+.btn-service {
+  background-color: $main-brand-color;
+  color: #ffffff;
+  padding: 10px 50px;
+  margin-left: 108px;
+
+  &:hover {
+    background-color: lighten($main-brand-color, 10%);
+    color: #ffffff;
+  }
+}
+
+.btn-price-in-stock,
+.btn-price-know-more {
+  padding: 10px;
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.btn-price-in-stock {
+  background-color: $red;
+
+  &:hover {
+    background-color: lighten($red, 7%);
+  }
+}
+
+.btn-price-know-more {
+  background-color: $main-brand-color;
+
+  &:hover {
+    background-color: lighten($main-brand-color, 10%);
+  }
+}
+
+.btn-finance {
+  color: #fff;
+  background-color: $main-brand-color;
+
+  &:hover {
+    background-color: lighten($main-brand-color, 10%);
+    color: #ffffff;
+  }
+}

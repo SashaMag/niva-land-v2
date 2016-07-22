@@ -1,0 +1,47 @@
+.contacts-page {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAR0lEQVQYV2NUVVX9z0AAPH/+nIGRkEKQIklJSfwKYYpAFuI0EVkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQh4fnPyicCAEAnFwpDDB2890AAAAASUVORK5CYII=) repeat;
+    box-shadow: 0 0px 10px 0px #888;
+}
+
+.contacts-description {
+  color: $light-grey;
+  text-align: center;
+
+  .first-row,
+  .second-row,
+  .third-row{
+    display: block;
+  }
+
+  .first-row {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 11px;
+  }
+
+  .second-row {
+    font-size: 27px;
+    margin-bottom: 25px;
+  }
+
+  .third-row {
+    margin-bottom: 47px;
+    font-size: 27px;
+
+    a {
+      color: $main-brand-color;
+    }
+  }
+}
+
+.map-block {
+  position: relative;
+
+  .form {
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    right: 50px;
+    box-shadow: 0 0px 7px -1px #333;
+  }
+}

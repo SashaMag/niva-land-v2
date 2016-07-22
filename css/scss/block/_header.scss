@@ -1,0 +1,92 @@
+header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: #333;
+  z-index: 2;
+  box-shadow: 0 0px 10px 0px #888;
+
+  .wrap {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARklEQVQYV4XQOwoAMAgDUB28iov3P52DxUJLP34yPxIIMrNBEyIC7KAjVa3hQj6YNp4ohS8KYYQ+mKELVmjDDk0oIuY/dRnywSmE362jwgAAAABJRU5ErkJggg==) repeat;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .main-logo-block,
+  .main-nav,
+  .main-phones-block {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .main-nav {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .main-phones-block {
+    margin-top: -5px;
+  }
+}
+
+.main-nav {
+
+  ul {
+    display: table;
+    padding: 0;
+
+    li {
+      display: table-cell;
+      text-align: center;
+      height: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      vertical-align: middle;
+      position: relative;
+
+      &:before {
+        @include after(absolute, block);
+        width: 1px;
+        height: 40px;
+        background-color: $light-grey;
+        top: 0;
+        right: 0;
+      }
+
+      &:first-child:after {
+        @include after(absolute, block);
+        width: 1px;
+        height: 40px;
+        background-color: $light-grey;
+        top: 0;
+        left: 0;
+      }
+
+      a {
+        color: $light-grey;
+      }
+    }
+  }
+}
+
+.main-phones-block {
+
+  a {
+    display: block;
+    color: $light-grey;
+    font-size: 21px;
+    margin-bottom: -2px;
+    margin-bottom: -2px;
+
+    &:first-child {
+      margin-bottom: -5px;
+    }
+  }
+
+  .description {
+    color: $main-brand-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    //text-align: justify;
+  }
+}
