@@ -1,0 +1,104 @@
+.utilization-page {
+  text-align: center;
+  padding-bottom: 60px;
+
+  p,
+  h3 {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 33px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .btn-block {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+.utilization-small-block {
+  padding: 25px;
+  text-align: center;
+
+  .img-block {
+    margin: 30px auto;
+    background: url('../img/icons/util.png') no-repeat;
+    height: 73px;
+    width: 135px;
+  }
+
+  .text-block {
+    font-weight: bold;
+  }
+}
+
+.utilization-small-block {
+  &-1 {
+    .img-block {
+      background-position: 0 0;
+    }
+  }
+
+  &-2 {
+    .img-block {
+      background-position: -135px 0;
+    }
+  }
+
+  &-3 {
+    .img-block {
+      background-position: -270px 0;
+    }
+  }
+
+  &-4 {
+    .img-block {
+      background-position: -405px 0;
+    }
+  }
+
+  &-5 {
+    .img-block {
+      background-position: -540px 0;
+    }
+  }
+}
+
+.utilization-button-wrap {
+  width: 70%;
+  margin: 30px auto;
+
+  .btn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

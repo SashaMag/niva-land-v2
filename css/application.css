@@ -55,7 +55,8 @@
 .col-sm-5-5,
 .col-md-5-5,
 .col-lg-5-5,
-.col-md-5-75 {
+.col-md-5-75╨▒
+.col-md-2-5 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -75,7 +76,8 @@
     width: 45.83333333%; } }
 @media (min-width: 992px) {
   .col-md-5-5,
-  .col-md-5-75 {
+  .col-md-5-75,
+  .col-md-2-5 {
     float: left; }
 
   .col-md-5-5 {
@@ -83,6 +85,9 @@
 
   .col-md-5-75 {
     width: 47.91666666%; }
+
+  .col-md-2-5 {
+    width: 20%; }
 
   .col-md-offset-05 {
     margin-left: 4.166666666%; } }
@@ -92,6 +97,21 @@
 
   .col-lg-5-5 {
     width: 45.83333333%; } }
+.redline {
+  position: relative; }
+  .redline:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    left: -8px;
+    top: 0;
+    height: 100%;
+    background-color: #E8AE05; }
+  .redline-bold:before {
+    width: 7px;
+    left: -12px; }
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2691,8 +2711,8 @@ header {
     display: table-cell;
     text-align: center;
     height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
     vertical-align: middle;
     position: relative; }
     .main-nav ul li:before {
@@ -2729,6 +2749,63 @@ header {
   font-size: 12px;
   text-transform: uppercase; }
 
+@media (max-width: 1200px) {
+  header {
+    text-align: center;
+    position: static; }
+    header .main-nav {
+      display: block; }
+    header br {
+      display: none; }
+    header .main-phones-block {
+      margin-top: 50px; }
+
+  .main-nav {
+    padding-top: 30px; }
+    .main-nav ul {
+      display: block; }
+      .main-nav ul li {
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto; }
+        .main-nav ul li:before {
+          width: 100%;
+          height: 1px;
+          background-color: #ddd;
+          top: 0;
+          right: 0; }
+        .main-nav ul li:last-child:after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 1px;
+          right: 0%;
+          bottom: 0;
+          background-color: #ddd; }
+        .main-nav ul li:first-child:after {
+          width: 0;
+          height: 0; }
+        .main-nav ul li:first-child:before {
+          width: 0;
+          height: 0; }
+        .main-nav ul li a {
+          font-size: 25px; }
+
+  .main-phones-block {
+    width: 100%;
+    margin-top: 50px; }
+    .main-phones-block a {
+      display: inline;
+      font-size: 40px; }
+      .main-phones-block a:first-child {
+        float: left; }
+      .main-phones-block a:last-child {
+        float: right; }
+    .main-phones-block .description {
+      font-size: 20px; } }
 .form {
   background-color: rgba(0, 0, 0, 0.7);
   width: 325px;
@@ -2774,6 +2851,20 @@ header {
     .form button:hover {
       color: #fff;
       background-color: #fac426; }
+
+.form-headline-block {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  /* color: black; */
+  margin-right: -40px;
+  margin-left: -40px;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid white; }
 
 .form-modal {
   width: 465px;
@@ -2896,31 +2987,82 @@ header {
 .slide-1-text {
   color: #fff; }
   .slide-1-text > h1, .slide-1-text span {
-    position: absolute; }
+    position: absolute;
+    text-shadow: 0 0 6px #333; }
   .slide-1-text h1 {
-    font-size: 97px;
-    left: 42px;
-    top: 76px;
-    font-weight: bold;
-    text-shadow: 0 0 5px #000; }
+    top: 80px;
+    left: 25px;
+    font-size: 45px; }
+    .slide-1-text h1 .redline {
+      position: relative; }
   .slide-1-text .sale {
-    top: 196px;
-    left: 142px;
-    text-shadow: 0 0 5px #333;
-    font-size: 44px; }
+    top: 175px;
+    font-size: 30px; }
   .slide-1-text .price {
-    font-size: 132px;
-    text-shadow: 0 0 5px #000;
-    top: 228px; }
+    top: 222px;
+    font-size: 90px; }
   .slide-1-text .rub {
-    font-size: 27px;
+    top: 272px;
     transform: rotate(-90deg);
-    text-shadow: 0 0 5px #000;
-    top: 299px;
-    left: 457px; }
+    left: 272px;
+    font-size: 19px; }
+  .slide-1-text .profit {
+    top: 198px;
+    left: 333px;
+    font-size: 111px; }
+  .slide-1-text .special {
+    top: 360px;
+    font-size: 30px; }
 
+@media (max-width: 1200px) {
+  .slider-page {
+    padding-top: 0; }
+
+  .slide-1-text {
+    text-align: center; }
+    .slide-1-text h1, .slide-1-text span {
+      position: static;
+      font-size: 30px;
+      display: block; }
+    .slide-1-text h1 {
+      display: block;
+      font-size: 45px;
+      margin-bottom: 30px; }
+      .slide-1-text h1 .redline {
+        display: inline;
+        font-size: 45px; }
+    .slide-1-text .price {
+      display: inline;
+      font-size: 50px; }
+    .slide-1-text .rub {
+      display: inline;
+      transform: rotate(0);
+      font-size: 45px; }
+    .slide-1-text .profit {
+      display: inline;
+      font-size: 45px; }
+
+  .slide-1 {
+    margin-top: 0; }
+    .slide-1 .form {
+      position: static;
+      width: 80%;
+      margin: 30px auto; }
+    .slide-1 .bg {
+      padding-top: 30px;
+      min-height: 1000px; } }
 .client-service-page {
   padding-bottom: 30px; }
+
+.client-service-text {
+  padding-left: 50px;
+  margin-bottom: 30px; }
+  .client-service-text h3 {
+    font-size: 30px; }
+  .client-service-text p {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .client-service-offer-block {
   position: relative;
@@ -2978,7 +3120,7 @@ header {
 
 @media (min-width: 768px) {
   .client-service-offer-block {
-    min-height: 230px; } }
+    min-height: 280px; } }
 .service-page {
   background: url("../img/service.png");
   padding-top: 0;
@@ -3131,7 +3273,8 @@ header {
     margin-bottom: 30px; }
   .finance-block p {
     padding-left: 26px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 19px; }
   .finance-block ul {
     list-style: none;
     padding-left: 23px; }
@@ -3139,7 +3282,8 @@ header {
       position: relative;
       padding-left: 17px;
       text-indent: -.7em;
-      margin-bottom: 23px; }
+      margin-bottom: 23px;
+      font-size: 17px; }
       .finance-block ul li:before {
         content: "\002022";
         font-size: 42px;
@@ -3234,5 +3378,49 @@ header {
     top: 75px;
     right: 50px;
     box-shadow: 0 0px 7px -1px #333; }
+
+.utilization-page {
+  text-align: center;
+  padding-bottom: 60px; }
+  .utilization-page p,
+  .utilization-page h3 {
+    text-align: center; }
+  .utilization-page h3 {
+    font-size: 33px;
+    margin-bottom: 40px;
+    margin-top: 40px; }
+  .utilization-page p {
+    font-size: 25px; }
+  .utilization-page .btn-block {
+    margin-top: 35px;
+    margin-bottom: 20px; }
+
+.utilization-small-block {
+  padding: 25px;
+  text-align: center; }
+  .utilization-small-block .img-block {
+    margin: 30px auto;
+    background: url("../img/icons/util.png") no-repeat;
+    height: 73px;
+    width: 135px; }
+  .utilization-small-block .text-block {
+    font-weight: bold; }
+
+.utilization-small-block-1 .img-block {
+  background-position: 0 0; }
+.utilization-small-block-2 .img-block {
+  background-position: -135px 0; }
+.utilization-small-block-3 .img-block {
+  background-position: -270px 0; }
+.utilization-small-block-4 .img-block {
+  background-position: -405px 0; }
+.utilization-small-block-5 .img-block {
+  background-position: -540px 0; }
+
+.utilization-button-wrap {
+  width: 70%;
+  margin: 30px auto; }
+  .utilization-button-wrap .btn {
+    width: 100%; }
 
 /*# sourceMappingURL=application.css.map */

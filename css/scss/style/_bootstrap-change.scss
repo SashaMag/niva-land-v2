@@ -2,7 +2,8 @@
 .col-sm-5-5,
 .col-md-5-5,
 .col-lg-5-5,
-.col-md-5-75 {
+.col-md-5-75б
+.col-md-2-5 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -31,7 +32,8 @@
 @media (min-width: 992px) {
 
   .col-md-5-5,
-  .col-md-5-75{
+  .col-md-5-75,
+  .col-md-2-5 {
     float: left;
   }
 
@@ -41,6 +43,10 @@
 
   .col-md-5-75 {
     width: 47.91666666%;
+  }
+
+  .col-md-2-5 {
+    width: 20%;
   }
 
   .col-md-offset-05 {

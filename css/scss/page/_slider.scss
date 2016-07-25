@@ -34,39 +34,114 @@
   color: #fff;
   & > h1, span {
     position: absolute;
+    text-shadow: 0 0 6px #333;
   }
 
   h1 {
-    font-size: 97px;
-    left: 42px;
-    top: 76px;
-    font-weight: bold;
-    text-shadow: 0 0 5px #000;
+    top: 80px;
+    left: 25px;
+    font-size: 45px;
+
+    .redline {
+      position: relative;
+    }
   }
 
   .sale {
-    top: 196px;
-    left: 142px;
-    text-shadow: 0 0 5px #333;
-    font-size: 44px;
+    top: 175px;
+    font-size: 30px;
   }
 
   .price {
-    font-size: 132px;
-    text-shadow: 0 0 5px #000;
-    top: 228px;
+    top: 222px;
+    font-size: 90px;
   }
 
   .rub {
-    font-size: 27px;
+    top: 272px;
     transform: rotate(-90deg);
-    text-shadow: 0 0 5px #000;
-    top: 299px;
-    left: 457px;
+    left: 272px;
+    font-size: 19px;
+  }
+
+  .profit {
+    top: 198px;
+    left: 333px;
+    font-size: 111px;
+  }
+
+  .special {
+    top: 360px;
+    font-size: 30px;
   }
 }
 
+@media (max-width: 1200px) {
 
+  .slider-page {
+    padding-top: 0;
+  }
+
+  .slide-1-text {
+    text-align: center;
+    h1, span {
+      position: static;
+      font-size: 30px;
+      display: block;
+    }
+
+    h1 {
+      display: block;
+      font-size: 45px;
+      margin-bottom: 30px;
+
+      .redline {
+        display: inline;
+        font-size: 45px;
+      }
+    }
+
+    .sale {
+    }
+
+    .price {
+      display: inline;
+      font-size: 50px;
+    }
+
+    .rub {
+      display: inline;
+      transform: rotate(0);
+      font-size: 45px;
+    }
+
+    .profit {
+      display: inline;
+      font-size: 45px;
+    }
+
+    .special {
+    }
+  }
+
+  .slide-1 {
+    margin-top: 0;
+
+    .form {
+      position: static;
+      width: 80%;
+      margin: 30px auto;
+    }
+
+    .bg {
+      padding-top: 30px;
+      min-height: 1000px;
+    }
+  }
+
+
+
+}
 
 
 

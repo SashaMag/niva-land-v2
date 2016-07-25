@@ -1,7 +1,6 @@
 /**
  * Created by ke1evra on 18.07.2016.
  */
-
 $(document).ready(function () {
 
   //плавный якорь
