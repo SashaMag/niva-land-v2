@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="js/lib/jquery.bxslider.min.js"></script>
-  <script src="js/lib/remodal.min.js"></script>
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/application.css">
   <style>
@@ -73,7 +71,7 @@
               <span class="special">+ СПЕЦ условия на доп. оборудование<br> и сервис</span>
             </div>
 
-            <form action="" class="form main-form">
+            <form action="" class="form main-form" id="form-main-form" form-name="Стать участником акции">
 
               <div class="form-headline-block ">
                 <span class="redline redline-bold">Стать</span> участником акции
@@ -83,7 +81,7 @@
                 <label for="main-form-1-name">Ваше имя</label>
 
                 <div class="input-icon">
-                  <input type="text" id="main-form-1-name" placeholder="Имя">
+                  <input type="text" id="main-form-1-name" placeholder="Имя" field-name="Имя">
                   <i class="fa fa-user" aria-hidden="true"></i>
                 </div>
               </div>
@@ -92,12 +90,12 @@
                 <label for="main-form-1-phone">Ваш телефон</label>
 
                 <div class="input-icon">
-                  <input type="text" id="main-form-1-phone" placeholder="Телефон">
+                  <input type="text" id="main-form-1-phone" placeholder="Телефон" class="text_required" field-name="Телефон">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
               </div>
 
-              <button type="submit" class="btn submit-btn">Записаться</button>
+              <button type="submit" class="btn submit-btn generalSubmitMail">Записаться</button>
             </form>
 
           </div>
@@ -588,13 +586,13 @@ Hорма токсичности ЕВРО-5, без снижения разго�
           <div class="col-md-5-5 col-md-offset-1">
             <article class="finance-block">
 
-              <form action="" class="form finance-form">
+              <form action="" class="form finance-form" id="form-finance-form" form-name="Заявка на кредит или рассрочку">
 
                 <div class="input-block">
                   <label for="main-form-1-name">Ваше имя</label>
 
                   <div class="input-icon">
-                    <input type="text" id="main-form-1-name" placeholder="Имя">
+                    <input type="text" id="main-form-1-name" placeholder="Имя" field-name="Имя">
                     <i class="fa fa-user" aria-hidden="true"></i>
                   </div>
                 </div>
@@ -603,12 +601,12 @@ Hорма токсичности ЕВРО-5, без снижения разго�
                   <label for="main-form-1-phone">Ваш телефон</label>
 
                   <div class="input-icon">
-                    <input type="text" id="main-form-1-phone" placeholder="Телефон">
+                    <input type="text" id="main-form-1-phone" placeholder="Телефон" class="text_required" field-name="Телефон">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                   </div>
                 </div>
 
-                <button type="submit" class="btn submit-btn red">Заявка на кредит или рассрочку</button>
+                <button type="submit" class="btn submit-btn red generalSubmitMail">Заявка на кредит или рассрочку</button>
               </form>
 
               <!--<h4>Программа<br>гос. утилизации и обмена</h4>-->
@@ -750,13 +748,13 @@ Hорма токсичности ЕВРО-5, без снижения разго�
 
       <div class="map-block">
 
-        <form action="" class="form contacts-form">
+        <form action="" class="form contacts-form" id="form-contacts-form" form-name="Заказать звонок">
 
           <div class="input-block">
             <label for="main-form-1-name">Ваше имя</label>
 
             <div class="input-icon">
-              <input type="text" id="main-form-1-name" placeholder="Имя">
+              <input type="text" id="main-form-1-name" placeholder="Имя" field-name="Имя">
               <i class="fa fa-user" aria-hidden="true"></i>
             </div>
           </div>
@@ -765,12 +763,12 @@ Hорма токсичности ЕВРО-5, без снижения разго�
             <label for="main-form-1-phone">Ваш телефон</label>
 
             <div class="input-icon">
-              <input type="text" id="main-form-1-phone" placeholder="Телефон">
+              <input type="text" id="main-form-1-phone" placeholder="Телефон" class="text_required"  field-name="Телефон">
               <i class="fa fa-phone" aria-hidden="true"></i>
             </div>
           </div>
 
-          <button type="submit" class="btn submit-btn">Заказать звонок</button>
+          <button type="submit" class="btn submit-btn generalSubmitMail">Заказать звонок</button>
         </form>
 
         <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=b3xQk-DAV0Bc4BZ6HeXf2yiO6KoK7ONR&width=100%&height=700&lang=ru_RU&sourceType=constructor"></script>
@@ -792,7 +790,7 @@ Hорма токсичности ЕВРО-5, без снижения разго�
      id="modal-form"
      data-remodal-id="modal-form"
      data-remodal-options="hashTracking: false">
-  <form action="" class="form form-modal">
+  <form action="" class="form form-modal" id="form-form-modal" form-name="Стать участником акции">
     <a data-remodal-action="close" class="remodal-close"></a>
 
     <div class="modal-form-headline">Отправьте заявку, и наши менеджеры свяжутся с вами в течение двух минут</div>
@@ -803,7 +801,7 @@ Hорма токсичности ЕВРО-5, без снижения разго�
       <label for="main-form-1-name">Ваше имя</label>
 
       <div class="input-icon">
-        <input type="text" id="main-form-1-name" placeholder="Имя">
+        <input type="text" id="main-form-1-name" placeholder="Имя" field-name="Телефон">
         <i class="fa fa-user" aria-hidden="true"></i>
       </div>
     </div>
@@ -812,12 +810,12 @@ Hорма токсичности ЕВРО-5, без снижения разго�
       <label for="main-form-1-phone">Ваш телефон</label>
 
       <div class="input-icon">
-        <input type="text" id="main-form-1-phone" placeholder="Телефон">
+        <input type="text" id="main-form-1-phone" placeholder="Телефон" class="text_required" field-name="Телефон">
         <i class="fa fa-phone" aria-hidden="true"></i>
       </div>
     </div>
 
-    <button type="submit" class="btn submit-btn">Отправить</button>
+    <button type="submit" class="btn submit-btn generalSubmitMail">Отправить</button>
   </form>
 </div>
 
@@ -866,6 +864,9 @@ Hорма токсичности ЕВРО-5, без снижения разго�
 </div>
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/lib/jquery.bxslider.min.js"></script>
+<script src="js/lib/remodal.min.js"></script>
 
 <script src="js/script.js"></script>
 

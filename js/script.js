@@ -98,3 +98,159 @@ $(document).ready(function () {
   });
 
 });
+
+// Send mail - general
+$(".generalSubmitMail").click(function (e) {
+
+  console.log('ok')
+
+  var idForm = $(this).closest("form").attr("id"); //$("form").attr("id");
+
+  //console.log( $(this).closest("form").attr("id") );
+
+
+  var fieldsMalName = new Array();
+  var fieldsMalVal = new Array();
+  var fieldsMalStop = false;
+
+  $('#' + idForm + " input[type='text']:visible").each(function () {
+
+    // $(this).attr('field-name')
+
+    fieldsMalName.push($(this).attr('field-name')); // placeholder
+    fieldsMalVal.push($(this).val());
+
+    //text_required
+    if ($(this).hasClass('text_required')) {
+
+      //console.log('click');
+
+      if ($(this).val().length >= 6) {
+
+        fieldsMalStop = true;
+
+        $(this).css("border", "");
+
+      } else if ($(this).val().length <= 5) {
+
+        fieldsMalStop = false;
+
+        $(this).css("border", "1px solid red");
+
+        alert('Обязательное поле: ' + $(this).attr('placeholder'));
+
+
+        // $.modal().close();
+        //
+        // $.modal().open({
+        //     onOpen: function(e, options){
+        //         e.html('Обязательное поле: <b>'+ $(this).attr('placeholder') +'</b>');
+        //     }
+        // });
+
+        // $.colorbox({
+        //   width: '450px',
+        //   scrolling: false,
+        //   preloading: false,
+        //   html: '<br><br><p style="font-size: 16px; text-align: center">Обязательное поле: <b style="color: #CC0000">'+ $(this).attr('placeholder') +'</b> ! </p><br>',
+        //
+        //   onComplete: function () {
+        //     $('#cboxClose').html('<span style="color: #0365ad">скрыть подсказку</span>');
+        //   }
+        // });
+
+      }
+
+
+    }
+  });
+
+  // Radio
+  $('#' + idForm + " input[type='radio']:checked").each(function () {
+
+    // $(this).attr('field-name') + ':' +
+    //console.log( 'radio: ' + $('form#' + idForm + " input[type='radio']:checked", this).attr('value')  );
+
+    //console.log(this);
+
+    if ($(this).is(':checked')) {
+
+      //console.log($(this).attr('field-name') + ':' + $(this).attr('value'));
+
+      fieldsMalName.push($(this).attr('field-name'));
+      fieldsMalVal.push($(this).attr('value'));
+    }
+
+
+  });
+
+  // CheckBox
+  $('#' + idForm + " input[type='checkbox']:checked").each(function () {
+
+    if ($(this).is(':checked')) {
+
+      fieldsMalName.push($(this).attr('field-name'));
+      fieldsMalVal.push($(this).attr('value'));
+    }
+
+
+  });
+
+  // TextArea
+  $('#' + idForm + " textarea:visible").each(function () {
+
+    fieldsMalName.push($(this).attr('field-name')); // $(this).attr('placeholder') +
+    fieldsMalVal.push($(this).val());
+
+
+  });
+
+  // Select
+  $('#' + idForm + ' select:visible').each(function () {
+
+
+    //console.log($(this).attr('field-name') + ':' + $('option:selected', this).text());
+
+    fieldsMalName.push($(this).attr('field-name'));
+    fieldsMalVal.push($('option:selected', this).text());
+
+  });
+
+  // Check & Send
+  if (fieldsMalStop == true) {
+
+    $.post('/mailspo.php', {
+      'FormKeyVal': fieldsMalVal,
+      'FormKeyName': fieldsMalName,
+      'Name': $('form#' + idForm).attr('form-name'),
+      //'Page': window.location.href,
+      'num_order': uniqq()
+    });
+    $('#' + idForm).trigger("reset");
+
+    alert('Дорогой клиент, Ваш запрос принят. В ближайшее время наши менеджеры обязательно свяжутся с Вами! ');
+
+    //$.modal().close();
+  }
+
+  e.preventDefault();
+
+});
+
+
+/////////////////
+
+
+function uniqq() {
+
+  var result = "";
+
+  $.ajax({
+    url: "/uniq.php",
+    async: false,
+    success: function (data) {
+      result = data;
+    }
+  });
+  return result;
+}
