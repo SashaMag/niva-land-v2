@@ -2968,6 +2968,15 @@ header {
   padding-top: 90px;
   box-shadow: 0 0px 8px 0px #888; }
 
+#bxslider {
+  padding: 0;
+  list-style: none; }
+
+.video {
+  min-height: 800px; }
+  .video iframe {
+    height: 800px; }
+
 .slide-1 .form {
   position: absolute;
   right: 0;
@@ -3050,7 +3059,12 @@ header {
       margin: 30px auto; }
     .slide-1 .bg {
       padding-top: 30px;
-      min-height: 1000px; } }
+      min-height: 1000px; }
+
+  .video {
+    min-height: auto; }
+    .video iframe {
+      height: 400px; } }
 .client-service-page {
   padding-bottom: 30px; }
 
@@ -3073,7 +3087,7 @@ header {
   box-shadow: 0 0 5px 2px #f5f5f5;
   border-radius: 3px;
   padding: 35px;
-  min-height: 200px;
+  min-height: 300px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;

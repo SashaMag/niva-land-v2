@@ -91,4 +91,10 @@ $(document).ready(function () {
 
   modalHeadline();
 
+  $(document).ready(function(){
+    $('#bxslider').bxSlider({
+      adaptiveHeight: true
+    });
+  });
+
 });
