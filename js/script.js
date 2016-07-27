@@ -103,8 +103,6 @@ $(document).ready(function () {
 // Send mail - general
 $(".generalSubmitMail").click(function (e) {
 
-  console.log('ok')
-
   var idForm = $(this).closest("form").attr("id"); //$("form").attr("id");
 
   //console.log( $(this).closest("form").attr("id") );
@@ -139,26 +137,6 @@ $(".generalSubmitMail").click(function (e) {
         $(this).css("border", "1px solid red");
 
         alert('Обязательное поле: ' + $(this).attr('placeholder'));
-
-
-        // $.modal().close();
-        //
-        // $.modal().open({
-        //     onOpen: function(e, options){
-        //         e.html('Обязательное поле: <b>'+ $(this).attr('placeholder') +'</b>');
-        //     }
-        // });
-
-        // $.colorbox({
-        //   width: '450px',
-        //   scrolling: false,
-        //   preloading: false,
-        //   html: '<br><br><p style="font-size: 16px; text-align: center">Обязательное поле: <b style="color: #CC0000">'+ $(this).attr('placeholder') +'</b> ! </p><br>',
-        //
-        //   onComplete: function () {
-        //     $('#cboxClose').html('<span style="color: #0365ad">скрыть подсказку</span>');
-        //   }
-        // });
 
       }
 
