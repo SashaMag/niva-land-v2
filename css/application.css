@@ -3079,10 +3079,14 @@ header {
       padding-top: 30px;
       min-height: 1000px; }
 
+  max-height: 1600px;
+  overflow: hidden;
   .video {
-    min-height: auto; }
+    height: 1600px; }
     .video iframe {
-      height: 400px; } }
+      height: 400px;
+      width: 100%;
+      position: static; } }
 .client-service-page {
   padding-bottom: 30px; }
 
