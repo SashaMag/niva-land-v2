@@ -93,7 +93,8 @@ $(document).ready(function () {
 
   $(document).ready(function(){
     $('#bxslider').bxSlider({
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      auto: true
     });
   });
 

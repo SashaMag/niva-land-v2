@@ -2324,7 +2324,6 @@
 /** THEME
 ===================================*/
 .bx-wrapper .bx-viewport {
-  background: #fff;
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
   -moz-transform: translatez(0);
@@ -2972,10 +2971,33 @@ header {
   padding: 0;
   list-style: none; }
 
+.bx-viewport {
+  background-image: url("../img/bg/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
+
 .video {
-  min-height: 800px; }
+  min-height: 800px;
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .video h2,
+  .video span {
+    color: #fff;
+    text-shadow: 0 0 6px #333; }
+  .video h2 {
+    font-size: 50px; }
+  .video span {
+    font-size: 25px; }
   .video iframe {
-    height: 800px; }
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 200px; }
 
 .slide-1 .form {
   position: absolute;
@@ -2987,10 +3009,6 @@ header {
 .slide-1 .container {
   position: relative; }
 .slide-1 .bg {
-  background-image: url("../img/bg/slide-1.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
   min-height: 800px; }
 
 .slide-1-text {
