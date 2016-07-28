@@ -3164,6 +3164,10 @@ header {
       -moz-box-shadow: 0 0 2px 2px #eee;
       box-shadow: 0 0 2px 2px #eee; }
 
+.become-a-member {
+  margin-bottom: 40px;
+  margin-left: 10px; }
+
 @media (min-width: 768px) {
   .client-service-offer-block {
     min-height: 280px; } }
