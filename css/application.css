@@ -2898,6 +2898,15 @@ header {
   .form-modal .input-block input {
     border: 1px solid #ddd; }
 
+.video-form {
+  width: 100%; }
+  .video-form .form-headline-block {
+    padding: 10px;
+    margin: 0;
+    background-color: transparent; }
+  .video-form .redline {
+    font-size: 1em; }
+
 .car-info-block.remodal {
   max-width: 900px;
   background-color: #fff;
@@ -2981,10 +2990,12 @@ header {
   background-size: cover; }
 
 .video {
-  min-height: 800px;
-  text-align: center;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAR0lEQVQYV2NUVVX9z0AAPH/+nIGRkEKQIklJSfwKYYpAFuI0EVkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQh4fnPyicCAEAnFwpDDB2890AAAAASUVORK5CYII=) repeat;
+  box-shadow: 0 0px 10px 0px #888;
+  padding-bottom: 60px;
+  padding-top: 30px;
+  margin-bottom: 45px; }
   .video h2,
   .video span {
     color: #fff;
@@ -2994,13 +3005,11 @@ header {
   .video span {
     font-size: 1.78em; }
   .video iframe {
-    height: 400px;
-    width: 800px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 200px; }
+    height: 473px;
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 30px; }
 
 .slide-1 .form {
   position: absolute;
@@ -3081,12 +3090,10 @@ header {
 
   max-height: 1600px;
   overflow: hidden;
-  .video {
-    height: 1600px; }
-    .video iframe {
-      height: 400px;
-      width: 100%;
-      position: static; } }
+  .video iframe {
+    height: 400px;
+    width: 100%;
+    position: static; } }
 .client-service-page {
   padding-bottom: 30px; }
 
@@ -3352,7 +3359,8 @@ header {
       padding: 6px; }
 
 .banks-page {
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 1px 0px #888; }
 
 .bank-image-block {
   width: 100%;
