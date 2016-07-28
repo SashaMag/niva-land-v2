@@ -29,11 +29,11 @@
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 3.5em;
   }
 
   span {
-    font-size: 25px;
+    font-size: 1.78em;
   }
 
   iframe {
@@ -79,7 +79,7 @@
   h1 {
     top: 80px;
     left: 25px;
-    font-size: 45px;
+    font-size: 3.2em;
 
     .redline {
       position: relative;
@@ -88,30 +88,30 @@
 
   .sale {
     top: 175px;
-    font-size: 30px;
+    font-size: 2.14em;
   }
 
   .price {
     top: 222px;
-    font-size: 90px;
+    font-size: 6.42em;
   }
 
   .rub {
     top: 272px;
     transform: rotate(-90deg);
     left: 272px;
-    font-size: 19px;
+    font-size: 1.35em;
   }
 
   .profit {
     top: 198px;
     left: 333px;
-    font-size: 111px;
+    font-size: 7.92;
   }
 
   .special {
     top: 360px;
-    font-size: 30px;
+    font-size: 2.14em;
   }
 }
 
@@ -125,18 +125,15 @@
     text-align: center;
     h1, span {
       position: static;
-      font-size: 30px;
       display: block;
     }
 
     h1 {
       display: block;
-      font-size: 45px;
       margin-bottom: 30px;
 
       .redline {
         display: inline;
-        font-size: 45px;
       }
     }
 
@@ -145,18 +142,18 @@
 
     .price {
       display: inline;
-      font-size: 50px;
+      font-size: 3.57em;
     }
 
     .rub {
       display: inline;
       transform: rotate(0);
-      font-size: 45px;
+      font-size: 3.21em;
     }
 
     .profit {
       display: inline;
-      font-size: 45px;
+      font-size: 3.21em;
     }
 
     .special {

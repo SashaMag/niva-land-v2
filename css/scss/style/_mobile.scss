@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 11px;
+  }
+
+  .client-service-text ul {
+    padding: 0;
+    margin-left: -30px;
+  }
+
+  .form-modal {
+    width: 100%;
+  }
+
+  .contacts-form {
+    position: static !important;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .utilization-button-wrap {
+    width: 100%;
+  }
+
+  .utilization-page {
+    .row.btn-block {
+      margin: 0;
+    }
+  }
+
+  .finance-block {
+
+    ul {
+      font-size: 15px;
+
+      li:before {
+        top: -26px;
+      }
+    }
+
+    .finance-form {
+      width: 100%;
+
+      label {
+        font-size: 25px;
+      }
+
+      input {
+        font-size: 30px;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      font-size: 12px !important;
+    }
+  }
+
+  .car-info-block {
+    width: 100%;
+  }
+
+  .client-service-offer-block {
+    ul {
+      margin-bottom: 30px;
+      padding: 0;
+    }
+  }
+
+  .btn-service {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+  }
+}

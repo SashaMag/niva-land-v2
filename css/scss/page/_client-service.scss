@@ -8,11 +8,11 @@
   margin-bottom: 30px;
 
   h3 {
-    font-size: 30px;
+    font-size: 2.14em;
   }
 
   p {
-    font-size: 24px;
+    font-size: 1.71em;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -44,7 +44,7 @@
     text-align: center;
     line-height: 36px;
     @include border-radius;
-    font-size: 20px;
+    font-size: 1.42em;
     color: #ffffff;
     background-color: $main-brand-color;
 
@@ -58,11 +58,11 @@
     //vertical-align: middle;
     margin-left: 16px;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.71em;
     font-weight: bold;
   }
   .description {
-    font-size: 16px;
+    font-size: 1.14em;
   }
 
   button {
