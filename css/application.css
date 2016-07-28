@@ -2899,7 +2899,10 @@ header {
     border: 1px solid #ddd; }
 
 .video-form {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-top: 28px; }
   .video-form .form-headline-block {
     padding: 10px;
     margin: 0;
@@ -3005,7 +3008,7 @@ header {
   .video span {
     font-size: 1.78em; }
   .video iframe {
-    height: 473px;
+    height: 480px;
     width: 100%;
     margin-top: 30px;
     display: inline-block;
