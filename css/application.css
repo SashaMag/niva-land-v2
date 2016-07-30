@@ -115,6 +115,9 @@
 body {
   font-size: 14px; }
 
+.red-text {
+  color: #c33; }
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2858,14 +2861,11 @@ header {
   color: #fff;
   font-size: 2.2em;
   text-align: center;
-  padding-top: 60px;
   padding-bottom: 15px;
   /* color: black; */
   margin-right: -40px;
   margin-left: -40px;
-  margin-top: -50px;
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-bottom: 2px solid white; }
 
 .form-modal {
@@ -2981,6 +2981,13 @@ header {
   padding: 0;
   padding-top: 90px;
   box-shadow: 0 0px 8px 0px #888; }
+  .slider-page .form-wrap {
+    position: relative;
+    z-index: 10; }
+  .slider-page .form {
+    position: absolute;
+    top: 120px;
+    right: 40px; }
 
 #bxslider {
   padding: 0;
@@ -3056,9 +3063,26 @@ header {
     top: 360px;
     font-size: 2.14em; }
 
+.slide-2-text {
+  text-shadow: 0 0 6px #333;
+  color: #fff; }
+  .slide-2-text h2 {
+    margin-top: 118px;
+    font-size: 60px;
+    margin-left: 43px; }
+  .slide-2-text .description {
+    font-size: 50px;
+    display: block;
+    margin-left: 32px; }
+
 @media (max-width: 1200px) {
   .slider-page {
     padding-top: 0; }
+    .slider-page .form {
+      top: 445px;
+      margin: 0 auto;
+      right: 0;
+      left: 0; }
 
   .slide-1-text {
     text-align: center; }
