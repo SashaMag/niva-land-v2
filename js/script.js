@@ -78,12 +78,19 @@ $(document).ready(function () {
       formButtons[i].addEventListener('click', function() {
 
         var headline = form.querySelector('.modal-form-headline');
+        var btn = form.querySelector('.submit-btn');
 
         if(this.dataset.headline) {
           headline.innerText = this.dataset.headline;
           headline.classList.add('active');
         } else {
           headline.classList.remove('active');
+        }
+
+        if(this.dataset.btntext) {
+          btn.innerText = this.dataset.btntext;
+        } else {
+          btn.innerText = 'Отправить';
         }
       });
     }
@@ -93,7 +100,7 @@ $(document).ready(function () {
 
   $(document).ready(function(){
     $('#bxslider').bxSlider({
-        auto: true
+        //auto: true
     });
   });
 

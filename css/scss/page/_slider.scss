@@ -81,9 +81,11 @@
 }
 
 .slide-1-text {
+  padding-top: 95px;
   color: #fff;
+
   & > h1, span {
-    position: absolute;
+    //position: absolute;
     text-shadow: 0 0 6px #333;
   }
 
@@ -95,6 +97,17 @@
     .redline {
       position: relative;
     }
+  }
+
+  .three-profit {
+    font-size: 36px;
+    text-decoration: underline;
+    text-shadow: 0 0 6px #fff;
+  }
+
+  .finance {
+    font-size: 35px;
+    white-space: nowrap
   }
 
   .sale {
@@ -150,7 +163,7 @@
     padding-top: 0;
 
     .form {
-      top: 445px;
+      top: 555px;
       margin: 0 auto;
       right: 0;
       left: 0;
@@ -159,9 +172,11 @@
 
   .slide-1-text {
     text-align: center;
+    padding-top: 0;
+
     h1, span {
       position: static;
-      display: block;
+      //display: block;
     }
 
     h1 {
@@ -207,7 +222,7 @@
 
     .bg {
       padding-top: 30px;
-      min-height: 1000px;
+      min-height: 1200px;
     }
   }
 
