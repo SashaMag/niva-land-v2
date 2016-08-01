@@ -100,7 +100,7 @@ $(document).ready(function () {
 
   $(document).ready(function(){
     $('#bxslider').bxSlider({
-        //auto: true
+        auto: true
     });
   });
 
