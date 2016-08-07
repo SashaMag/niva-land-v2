@@ -4,7 +4,6 @@
 }
 
 .client-service-text {
-  padding-left: 50px;
   margin-bottom: 30px;
 
   h3 {
@@ -89,5 +88,23 @@
 @media (min-width: 768px) and (max-width: 1200px) {
   .client-service-offer-block {
     min-height: 420px;
+  }
+}
+
+.maximum-profit-callback {
+  display: inline-block;
+  background-color: $red;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 90px;
+  position: relative;
+
+  &:before {
+    @include after(absolute, block);
+    background-color: $main-brand-color;
+    width: 10px;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
 }

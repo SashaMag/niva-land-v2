@@ -3,11 +3,6 @@
   padding-top: 90px;
   box-shadow: 0 0px 8px 0px #888;
 
-  .form-wrap {
-    position: relative;
-    z-index: 10;
-  }
-
   .form {
     position: absolute;
     top: 120px;
@@ -21,7 +16,7 @@
 }
 
 .bx-viewport {
-  background-image: url('../img/bg/slide-1.jpg');
+  background-image: url('../img/bg/slide-1-2.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -81,7 +76,7 @@
 }
 
 .slide-1-text {
-  padding-top: 95px;
+  padding-top: 115px;
   color: #fff;
 
   & > h1, span {
@@ -242,7 +237,24 @@
 
 }
 
+.five-reasons {
+  margin-bottom: 50px;
+}
 
+.maximum-profit-callback {
+  &.main-btn {
+    padding: 15px 48px;
+    display: block;
+    width: 379px;
+
+    &:hover,
+    &:active {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: lighten($red, 10%);
+    }
+  }
+}
 
 
 

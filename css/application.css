@@ -118,6 +118,9 @@ body {
 .red-text {
   color: #c33; }
 
+.align-center {
+  text-align: center; }
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2867,7 +2870,6 @@ header {
   font-size: 2.2em;
   text-align: center;
   padding-bottom: 15px;
-  /* color: black; */
   margin-right: -40px;
   margin-left: -40px;
   margin-bottom: 20px;
@@ -2916,6 +2918,44 @@ header {
     background-color: transparent; }
   .video-form .redline {
     font-size: 1em; }
+
+.form-wrap {
+  text-align: center; }
+
+.main-form {
+  background-color: transparent;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  max-width: 540px; }
+  .main-form .input-block label {
+    color: #333333; }
+  .main-form .input-block input {
+    border: 1px solid rgba(0, 0, 0, 0.3); }
+
+select {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.85em;
+  border-radius: 3px; }
+
+.radio-block {
+  margin-bottom: 25px; }
+  .radio-block label {
+    font-size: 1.3em;
+    font-weight: normal; }
+  .radio-block span {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 1.7em; }
+
+.select-block span {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  display: block; }
 
 .car-info-block.remodal {
   max-width: 900px;
@@ -2988,9 +3028,6 @@ header {
   padding: 0;
   padding-top: 90px;
   box-shadow: 0 0px 8px 0px #888; }
-  .slider-page .form-wrap {
-    position: relative;
-    z-index: 10; }
   .slider-page .form {
     position: absolute;
     top: 120px;
@@ -3001,7 +3038,7 @@ header {
   list-style: none; }
 
 .bx-viewport {
-  background-image: url("../img/bg/slide-1.jpg");
+  background-image: url("../img/bg/slide-1-2.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover; }
@@ -3041,7 +3078,7 @@ header {
   min-height: 800px; }
 
 .slide-1-text {
-  padding-top: 95px;
+  padding-top: 115px;
   color: #fff; }
   .slide-1-text > h1, .slide-1-text span {
     text-shadow: 0 0 6px #333; }
@@ -3135,11 +3172,22 @@ header {
     height: 400px;
     width: 100%;
     position: static; } }
+.five-reasons {
+  margin-bottom: 50px; }
+
+.maximum-profit-callback.main-btn {
+  padding: 15px 48px;
+  display: block;
+  width: 379px; }
+  .maximum-profit-callback.main-btn:hover, .maximum-profit-callback.main-btn:active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #d65c5c; }
+
 .client-service-page {
   padding-bottom: 30px; }
 
 .client-service-text {
-  padding-left: 50px;
   margin-bottom: 30px; }
   .client-service-text h3 {
     font-size: 2.14em; }
@@ -3212,6 +3260,23 @@ header {
 @media (min-width: 768px) and (max-width: 1200px) {
   .client-service-offer-block {
     min-height: 420px; } }
+.maximum-profit-callback {
+  display: inline-block;
+  background-color: #c33;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 90px;
+  position: relative; }
+  .maximum-profit-callback:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #E8AE05;
+    width: 10px;
+    height: 100%;
+    left: 0;
+    top: 0; }
+
 .service-page {
   background: url("../img/service.png");
   padding-top: 0;

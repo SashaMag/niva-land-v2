@@ -98,11 +98,11 @@ $(document).ready(function () {
 
   modalHeadline();
 
-  $(document).ready(function(){
-    $('#bxslider').bxSlider({
-        auto: true
-    });
-  });
+  //$(document).ready(function(){
+  //  $('#bxslider').bxSlider({
+  //      auto: true
+  //  });
+  //});
 
 });
 
